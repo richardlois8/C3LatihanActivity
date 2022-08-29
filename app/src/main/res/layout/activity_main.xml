@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:gravity="center">
+
+    <Button
+        android:id="@+id/btnClick1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Click Me 1!"
+        android:layout_gravity="center"/>
+
+    <Button
+        android:id="@+id/btnClick2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Click Me 2!"
+        android:layout_gravity="center"/>
+
+    <TextView
+        android:id="@+id/tvHello"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Welcome"
+        android:textSize="30sp"
+        android:layout_gravity="center" />
+
+
+    <Button
+        android:id="@+id/btnHome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Penjumlahan"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"/>
+    <Button
+        android:id="@+id/btnBmi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hitung BMI"
+        android:layout_gravity="center" />
+    <Button
+        android:id="@+id/btnNilai"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hitung Nilai"
+        android:layout_gravity="center" />
+
+    <EditText
+        android:id="@+id/etName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Fill your name"
+        android:layout_gravity="center"
+        android:layout_marginTop="100dp"/>
+
+    <Button
+        android:id="@+id/btnSubmit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        android:layout_gravity="center"/>
+
+    <TextView
+        android:id="@+id/tvHelloName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Welcome"
+        android:textSize="30sp"
+        android:layout_gravity="center" />
+
+</LinearLayout>

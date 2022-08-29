@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".latihan.BmiActivity"
+    android:padding="20dp">
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Kalkulator BMI"
+        android:textSize="30sp"
+        android:textColor="@color/white"
+        android:background="@drawable/et_background"
+        android:padding="10dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        />
+
+    <TableLayout
+        android:id="@+id/layoutForm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/tvTitle"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="20dp">
+
+        <TableRow>
+            <TextView
+                android:id="@+id/tvTitleUmur"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Umur : "
+                android:textSize="20sp"
+                android:textColor="@color/black"
+                app:layout_constraintTop_toBottomOf="@+id/tvTitle"
+                app:layout_constraintLeft_toLeftOf="parent"
+
+                android:layout_marginLeft="20dp"/>
+
+            <EditText
+                android:id="@+id/etUmur"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:inputType="numberDecimal"
+                android:textSize="20sp"
+                android:textColor="@color/black"
+                app:layout_constraintTop_toBottomOf="@+id/tvTitle"
+                app:layout_constraintLeft_toRightOf="@+id/tvTitleUmur" />
+
+            <TextView
+                android:id="@+id/tvKetUmur"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="tahun"
+                android:textSize="20sp"
+                android:textColor="@color/black"
+                app:layout_constraintTop_toBottomOf="@+id/tvTitle"
+                app:layout_constraintLeft_toRightOf="@id/etUmur"
+
+                android:layout_marginLeft="10dp"/>
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:id="@+id/tvTitleTinggi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tinggi Badan : "
+                android:textSize="20sp"
+                android:textColor="@color/black"
+                app:layout_constraintTop_toBottomOf="@+id/tvTitleUmur"
+                app:layout_constraintLeft_toLeftOf="parent"
+
+                android:layout_marginLeft="20dp"/>
+
+            <EditText
+                android:id="@+id/etTinggi"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:inputType="numberDecimal"
+                android:textSize="20sp"
+                android:textColor="@color/black"
+                app:layout_constraintTop_toBottomOf="@+id/tvTitleUmur"
+                app:layout_constraintLeft_toRightOf="@+id/tvTitleTinggi" />
+
+            <TextView
+                android:id="@+id/tvKetTinggi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="cm"
+                android:textSize="20sp"
+                android:textColor="@color/black"
+                app:layout_constraintTop_toBottomOf="@+id/tvTitleUmur"
+                app:layout_constraintLeft_toRightOf="@id/etTinggi"
+
+                android:layout_marginLeft="10dp"/>
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:id="@+id/tvTitleBerat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Berat Badan : "
+                android:textSize="20sp"
+                android:textColor="@color/black"
+                app:layout_constraintTop_toBottomOf="@+id/tvTitleTinggi"
+                app:layout_constraintLeft_toLeftOf="parent"
+
+                android:layout_marginLeft="20dp"/>
+
+            <EditText
+                android:id="@+id/etBerat"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:inputType="numberDecimal"
+                android:textSize="20sp"
+                android:textColor="@color/black"
+                app:layout_constraintTop_toBottomOf="@+id/tvTitleTinggi"
+                app:layout_constraintLeft_toRightOf="@+id/tvTitleBerat" />
+
+            <TextView
+                android:id="@+id/tvKetBerat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="kg"
+                android:textSize="20sp"
+                android:textColor="@color/black"
+                app:layout_constraintTop_toBottomOf="@+id/tvTitleTinggi"
+                app:layout_constraintLeft_toRightOf="@id/etBerat"
+
+                android:layout_marginLeft="10dp"/>
+        </TableRow>
+    </TableLayout>
+
+    <Button
+        android:id="@+id/btnHitung"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="Hitung"
+        app:layout_constraintTop_toBottomOf="@id/layoutForm"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/btnReset"
+        android:layout_marginTop="20dp"
+        />
+
+    <Button
+        android:id="@+id/btnReset"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="Reset"
+        app:layout_constraintTop_toBottomOf="@id/layoutForm"
+        app:layout_constraintLeft_toRightOf="@id/btnHitung"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="20dp"
+        />
+</androidx.constraintlayout.widget.ConstraintLayout>
